@@ -7,5 +7,5 @@ func CreateContext(prefix string, r *core.Router) {
 }
 
 func initialize(s *core.Router) {
-	s.AddHandler("/about", AboutHandler)
+	s.AddGetHandler("/about", AboutHandler)
 }
